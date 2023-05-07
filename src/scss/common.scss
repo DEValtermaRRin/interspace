@@ -1,0 +1,253 @@
+body {
+  font-family: Manrope, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background: url("../img/bg-dark.jpg") 100% 33% / cover repeat-y fixed;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  width: $maxWidth + px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1405px) {
+  .container {
+    width: 100%;
+  }
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+#svg-main-theme-big {
+  fill: $goldColor;
+}
+
+.text-replace {
+  display: block;
+  &__text {
+    opacity: 0;
+  }
+
+  &__image {
+    position: absolute;
+  }
+
+  &__image_logo-image {
+    width: 100%;
+    top: -27px;
+    left: -3px;
+    fill: #fff;
+  }
+
+  &__image_logo-text {
+    width: 70%;
+    top: 0;
+    left: 27px;
+    fill: #fff;
+  }
+
+  &__image_promo-logo {
+    height: 100%;
+    width: 110%;
+    top: -34px;
+    left: 5px;
+    stroke: #818b88;
+    fill: none;
+    stroke-opacity: 0.3;
+    stroke-width: 2;
+  }
+
+  &__image_footer-logo{
+    width: 87.5%;
+    height: 100%;
+    stroke: #818b88;
+    fill: none;
+    stroke-opacity: 0.3;
+    stroke-width: 2;
+    top: 19px;
+    left: 107px;
+  }
+}
+
+.circle-block {
+  &__bg {
+    position: absolute;
+    height: 121%;
+    object-fit: cover;
+    z-index: -1;
+    border-radius: 50%;
+    left: -40%;
+    top: -183px;
+    width: 178vw;
+  }
+
+  &__image {
+    position: absolute;
+    width: 100vw;
+    height: 260px;
+    fill: #c1b07c;
+
+    &_top {
+      top: -279px;
+      left: -11px;
+    }
+
+    &_bottom {
+      left: -11px;
+      bottom: -345px;
+      transform: rotate(180deg);
+    }
+
+    &_middle-bottom {
+      height: 263px;
+      bottom: -345px;
+    }
+
+    &_middle-top {
+      top: -279px;
+      left: -11px;
+      height: 255px;
+    }
+
+    &_bottom-bottom {
+      height: 271px;
+      bottom: -309px;
+    }
+    &_bottom-top {
+      top: -295px;
+      left: -11px;
+      height: 278px;
+    }
+  }
+}
+
+.form-task {
+  display: flex;
+  gap: 30px;
+  &__input {
+    width: 290px;
+    text-align: left;
+    padding: 21px 40px;
+    border: 1px solid rgba(217, 217, 217, 0.5);
+    border-radius: 100px;
+    background: transparent;
+    overflow: visible;
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 150%;
+      text-align: center;
+      text-transform: lowercase;
+      color: rgba(246, 246, 246, 0.6);
+      letter-spacing: 0.04em;
+    }
+
+    &_bottom {
+      padding: 0px 40px 0 0;
+    }
+  }
+
+  &__input_dark {
+    border: 1px solid rgba(26, 26, 26, 0.2);
+    color: rgba(26, 26, 26, 0.8);
+    &::placeholder {
+      color: rgba(26, 26, 26, 0.6);
+    }
+  }
+
+  &__btn {
+    width: 70px;
+    height: 70px;
+    border: 1px solid $goldColor;
+    border-radius: 50%;
+    background: transparent;
+
+    &_bottom {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__image {
+    width: 15px;
+    height: 15px;
+    fill: $goldColor;
+  }
+}
+
+.common-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  letter-spacing: normal;
+  text-transform: lowercase;
+  color: #1a1a1a;
+  position: relative;
+  &_brand {
+    width: 296px;
+    letter-spacing: 0.02em;
+  }
+  &_concept {
+    letter-spacing: 0.03em;
+    width: 184px;
+  }
+  &_rebrand {
+    letter-spacing: 0.03em;
+    width: 197px;
+  }
+  &_market {
+    letter-spacing: 0.03em;
+    width: 485px;
+  }
+  &_choco {
+    width: 193px;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+  &_bar {
+    width: 208px;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+  }
+  &_milk {
+    width: 210px;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+  &_pizza {
+    width: 200px;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+  }
+
+  &:hover .common-title-image {
+    fill: $blackColor;
+  }
+}
+
+.common-title-image {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  fill: $goldColor;
+  top: 0;
+  right: 0;
+}

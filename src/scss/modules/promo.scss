@@ -1,0 +1,21 @@
+.promo {
+  &__title {
+    margin-top: 95px;
+    font-weight: 300;
+    font-size: 100px;
+    // font-size: calc(36px + (100 - 36) * ((100vw - 340px) / ($maxWidth - $minWidth)));
+    line-height: 100%;
+    text-transform: lowercase;
+    color: #f6f6f6;
+  }
+
+  &__logo {
+    height: 289px;
+    position: relative;
+    color: #f6f6f6;
+    font-weight: 300;
+    font-size: 240px;
+  }
+}
+
+

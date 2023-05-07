@@ -1,0 +1,158 @@
+.portfolio {
+  position: relative;
+
+  &__grid-partners {
+    margin-top: 28%;
+    display: grid;
+    grid-template: auto/repeat(5, 200px);
+    column-gap: 100px;
+    align-items: center;
+    row-gap: 148px;
+    padding-top: 45px;
+    padding-left: 5px;
+  }
+
+  &__grid-employees {
+    margin-top: 215px;
+    display: grid;
+    grid-template: auto / repeat(4, 268px);
+    column-gap: 110px;
+    row-gap: 80px;
+    align-items: center;
+  }
+
+  &__flex-main-partners {
+    margin-top: 103px;
+    display: flex;
+    gap: 262px;
+    align-items: center;
+    padding-bottom: 48px;
+  }
+}
+
+.partners {
+  &__image {
+    &_size {
+      width: 170px;
+    }
+  }
+}
+.employee {
+  text-align: center;
+
+  &:nth-child(n + 3) .employee__prof {
+    margin-left: 0;
+  }
+
+  &__image {
+    position: relative;
+    width: 268px;
+    height: 268px;
+    & img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0px;
+      left: -4px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+  }
+
+  &__info {
+    width: 264px;
+    margin-top: 22px;
+    padding: 0 62px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: $blackColor;
+    letter-spacing: 0.03em;
+  }
+
+  &__prof {
+    margin-left: -19px;
+    white-space: nowrap;
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 170%;
+    text-align: center;
+    text-transform: lowercase;
+    color: $blackColor;
+    letter-spacing: 0.03em;
+  }
+}
+.circle-photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid $goldColor;
+  border-radius: 50%;
+  z-index: 2;
+  top: 6px;
+  left: 0px;
+}
+.main-partner {
+  &:first-child {
+    width: 586px;
+  }
+  &:last-child {
+    width: 445px;
+  }
+  &__flex {
+    display: flex;
+    gap: 85px;
+  }
+
+  &__logo {
+    height: 66px;
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &_kult {
+      width: 196px;
+      height: 70px;
+    }
+  }
+
+  &__label {
+    margin-top: -5px;
+    font-size: 16px;
+    line-height: 170%;
+    color: $blackColor;
+    letter-spacing: 0.04em;
+  }
+
+  &__link {
+    margin-top: -2px;
+    display: block;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 200%;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    position: relative;
+    border: 1px solid rgba(97, 97, 97, 0.2);
+    border-radius: 100px;
+    padding: 5px 40px 5px 20px;
+    top: 20px;
+
+    &_arrow {
+      width: 13px;
+      height: 13px;
+      position: absolute;
+      fill: $goldColor;
+      top: 9px;
+      right: 19px;
+    }
+  }
+}

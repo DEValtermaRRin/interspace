@@ -1,0 +1,49 @@
+.aside {
+  grid-area: aside;
+  position: fixed;
+  z-index: 5;
+  left: 6.7%;
+  &__flex {
+    padding: 53px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__burger {
+  }
+
+  &__socials {
+  }
+
+  &__link {
+
+  }
+
+  &__image{
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+}
+.burger {
+  display: flex;
+  background-color:inherit;
+  gap: 6.5px;
+  &__item {
+    display: block;
+    width: 2px;
+    height: 40px;
+    background-color: #fff;
+  }
+}
+
+.socials{
+  &__flex{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

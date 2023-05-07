@@ -1,0 +1,38 @@
+.task {
+  &__container {
+    max-width: 730px;
+    margin: 24% auto 0;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 100px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+    color: #f6f6f6;
+  }
+
+  &__text {
+    margin: 40px auto 0;
+    max-width: 660px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 170%;
+    /* or 34px */
+    padding: 0 15px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #f6f6f6;
+
+    &_gold {
+      color: #c1b07c;
+    }
+  }
+
+  &__form {
+    margin-top: 40px;
+    margin-left: 8px;
+  }
+}
