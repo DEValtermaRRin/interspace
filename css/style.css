@@ -1097,7 +1097,7 @@ main {
   display: block;
   width: 100px;
   height: 100px;
-  background: url("../../img/star-gold.png") 100%/cover;
+  background: url("../img/star-gold.png") 100%/cover;
   z-index: 2;
 }
 
