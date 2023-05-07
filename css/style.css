@@ -156,13 +156,11 @@ h6 {
   font-style: normal;
 }
 
-.no-webp body{
-  background: url("../img/bg-dark.jpg") 100% 33%/cover repeat-y fixed; }
-
 body {
   font-family: Manrope, sans-serif;
   font-style: normal;
   font-weight: 400;
+  background: url("../img/bg-dark.jpg") 100% 33%/cover repeat-y fixed;
   overflow-x: hidden;
 }
 
@@ -703,15 +701,13 @@ main {
   color: #1A1A1A;
 }
 
-.no-webp .tags-list__item::before{
-  background: url("../../img/star-gold.png") 100%/cover; }
-
 .tags-list__item::before {
   content: "";
   width: 30px;
   height: 30px;
   display: inline-block;
   margin-right: 10px;
+  background: url("../../img/star-gold.png") 100%/cover;
 }
 
 .superpower__flex {
@@ -1093,9 +1089,6 @@ main {
   z-index: 0;
 }
 
-.no-webp .ticker__text::before{
-  background: url("../../img/star-gold.png") 100%/cover; }
-
 .ticker__text::before {
   content: "";
   position: absolute;
@@ -1104,6 +1097,7 @@ main {
   display: block;
   width: 100px;
   height: 100px;
+  background: url("../../img/star-gold.png") 100%/cover;
   z-index: 2;
 }
 
@@ -1425,9 +1419,3 @@ main {
     width: 100%;
   }
 }
-
-.webp body{ background: url(../img/bg-dark.webp) 100% 33%/cover repeat-y fixed; }
-
-.webp .tags-list__item::before{ background: url(../../img/star-gold.webp) 100%/cover; }
-
-.webp .ticker__text::before{ background: url(../../img/star-gold.webp) 100%/cover; }
